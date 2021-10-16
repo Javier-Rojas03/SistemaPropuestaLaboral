@@ -5,7 +5,7 @@
     {
 
         public function Index(){
-            require_once(VIEWS_PATH.".php"); // aca hay que mandarlo a la pantalla de login
+            require_once(VIEWS_PATH."login.php"); // aca hay que mandarlo a la pantalla de login
         }
 
         public function ShowAlumnView(){
@@ -13,7 +13,8 @@
             require_once(VIEWS_PATH.".php"); //aca hay que mostrar las cosas que van despues del login
         }
 
-        public function Login(){
+        public function Login($email){
+            //DAO de usuarios
             if(true)// aca se corrobora que el mail existe en el sistema
             {
                 $_SESSION["loggedUser"] = true; // igualarlo al mail
