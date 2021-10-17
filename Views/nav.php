@@ -8,10 +8,17 @@
      </span>
      <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-               <a class="nav-link" href="<?php echo FRONT_ROOT?>Student/ShowAddView">Agregar Alumno</a>
+               <a class="nav-link" href="<?php echo FRONT_ROOT?>Student/ShowAddView">Add Company</a>
           </li>
           <li class="nav-item">
-               <a class="nav-link" href="<?php echo FRONT_ROOT ?>Student/ShowListView">Listar Alumnos</a>
-          </li>          
+               <a class="nav-link" href="<?php echo FRONT_ROOT ?>Student/ShowListView">Student List</a>
+          </li>
+          <li class="nav-item">
+               <a class="nav-link" href="<?php echo FRONT_ROOT ?>Home/Menu">My Info</a>
+          </li>
+          <li class="nav-item">
+               <a class="nav-link" href="<?php echo FRONT_ROOT ?>Home/Logout">Logout</a>
+          </li>   
+                  
      </ul>
 </nav>

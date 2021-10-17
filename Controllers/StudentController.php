@@ -8,31 +8,27 @@
     {
         private $studentDAO;
 
-        public function __construct()
-        {
+        public function __construct(){
             $this->studentDAO = new StudentDAO();
         }
 
-        public function ShowAddView()
-        {
+        public function ShowAddView(){
             require_once(VIEWS_PATH."student-add.php");
         }
 
-        public function ShowListView()
-        {
+        public function ShowListView(){
             require_once(VIEWS_PATH."student-list.php");
         }
 
-        public function ShowMenu($email)
-        {
+        public function ShowMenu($email){
             $this->studentDAO->SaveAPI();
             $student = $this->studentDAO->SearchEmail($email);
             if($student != null){
-                 $_SESSION["loggedUser"] = $student;
-                 require_once(VIEWS_PATH."home.php");
+                $_SESSION["loggedUser"] = $student;
+                require_once(VIEWS_PATH."home.php");
              }else{
-                 echo "<script> confirm('El email no fue encontrado... vuelva a intentar');</script>";
-                 require_once(VIEWS_PATH."login.php");
+                echo "<script> confirm('El email no fue encontrado... vuelva a intentar');</script>";
+                require_once(VIEWS_PATH."login.php");
             }
         }
 
