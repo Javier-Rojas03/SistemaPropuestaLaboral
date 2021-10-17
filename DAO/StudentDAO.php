@@ -27,7 +27,7 @@
             return $this->studentList;
         }
 
-        public function SaveAPI(){
+        public function DownloadAPI(){
             $ch = curl_init();
             $url = 'https://utn-students-api.herokuapp.com/api/Student' ;
 
@@ -41,13 +41,21 @@
 
             $response = curl_exec($ch);
 
-            $contentArray = json_decode($response,true);
-
-            $jsonContent = json_encode($contentArray, JSON_PRETTY_PRINT);
-            
-            file_put_contents('Data/students.json', $jsonContent);
+            return $response;
         }
 
+        public function SaveAPI(){
+            if(!file_exists($this->fileName)){
+                $stringAPI = $this->DownloadAPI();
+
+                $contentArray = json_decode($stringAPI,true);
+            
+                $jsonContent = json_encode($contentArray, JSON_PRETTY_PRINT);
+
+                file_put_contents('Data/students.json', $jsonContent);
+            }
+        }
+        
         private function RetrieveData(){
 
              $this->userList = array();

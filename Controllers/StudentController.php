@@ -25,6 +25,7 @@
 
         public function ShowMenu($email)
         {
+            $this->studentDAO->SaveAPI();
             $student = $this->studentDAO->SearchEmail($email);
             if($student != null){
                  $_SESSION["loggedUser"] = $student;
