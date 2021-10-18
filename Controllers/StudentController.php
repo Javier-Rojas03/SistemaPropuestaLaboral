@@ -2,13 +2,21 @@
     namespace Controllers;
 
     use DAO\StudentDAO as StudentDAO;
+    use DAO\CompanyDAO as CompanyDAO;
 
     class StudentController
     {
         private $studentDAO;
+        private $companyDAO;
 
         public function __construct(){
             $this->studentDAO = new StudentDAO();
+            $this->companyDAO = new CompanyDAO;
+        }
+
+        public function ShowListView(){
+            $company_list = $this->companyDAO->GetAll();
+            require_once(VIEWS_PATH."std-company-list.php");
         }
 
         public function ShowMenu($email){

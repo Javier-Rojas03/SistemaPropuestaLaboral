@@ -38,6 +38,10 @@
             $this->ShowListView();
         }
 
+        public function CompanyInfo($id){
+            $company = $this->CompanyDAO->GetById($id);
+            require_once(VIEWS_PATH."company-info.php");
+        }
         
 
         

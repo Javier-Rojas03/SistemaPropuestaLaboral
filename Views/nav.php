@@ -27,7 +27,7 @@
                }else{
                     ?>
                          <li class="nav-item">
-                              <a class="nav-link" href="<?php echo FRONT_ROOT ?>Company/ShowListView">Company List</a>
+                              <a class="nav-link" href="<?php echo FRONT_ROOT ?>Student/ShowListView">Company List</a>
                          </li>
                          <li class="nav-item">
                               <a class="nav-link" href="<?php echo FRONT_ROOT ?>Home/Menu">My Info</a>

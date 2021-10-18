@@ -26,6 +26,7 @@
                                              <td><?php echo $company->getPhoneNumber(); ?></td>
                                              <td><?php echo $company->getCompanyId(); ?></td>  
                                              <td> 
+                                                  <!--SESION DE COMPANY PARA PASARLE LA COMPANIA A MODIFICAR O A DELETEAR-->
                                              <button class="btn" style="background-color: #48c; color: #fff" >Edit</button> 
                                              <button class="btn" style="background-color: #48c; color: #fff" >Delete</button> 
                                              </td>                                                                                                                                                                 
