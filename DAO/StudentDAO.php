@@ -12,7 +12,7 @@
             $this->RetrieveData();
             $studentExist = null;
 
-            $users = array_filter($this->userList, function($studentExist) use($email){
+            $users = array_filter($this->studentList, function($studentExist) use($email){
                 return $studentExist->getEmail() == $email;
             });
 
@@ -58,7 +58,7 @@
         
         private function RetrieveData(){
 
-             $this->userList = array();
+             $this->studentList = array();
 
              if(file_exists($this->fileName))
              {
@@ -81,7 +81,7 @@
                      $user->setPhoneNumber($content["phoneNumber"]);
                      $user->setActive($content["active"]);
 
-                     array_push($this->userList, $user);
+                     array_push($this->studentList, $user);
                  }
              }
         }
