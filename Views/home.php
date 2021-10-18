@@ -34,10 +34,17 @@
                                         <td><?php echo $student->getDni() ?></td>
                                         <td><?php echo $student->getFileNumber() ?></td>
                                         <td><?php echo $student->getGender() ?></td>
-                                        <td><?php echo $student->getBirthDate() ?></td>    <!--aca sacar la hora del nacimiento-->
+                                        <td><?php echo trim($student->getBirthDate(),"T0:") ?></td>
                                         <td><?php echo $student->getEmail() ?></td>
                                         <td><?php echo $student->getPhoneNumber() ?></td>
-                                        <td><?php echo $student->getActive() ?></td>      <!--aca hacer un if que muestre al usuario si se encuentra activo o no-->
+                                        <td>
+                                            <?php 
+                                                if($student->getActive())
+                                                    echo "✔";
+                                                else
+                                                    echo "❌";
+                                            ?>
+                                        </td>
                                     </tr>
                                 <?php
                             }

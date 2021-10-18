@@ -10,7 +10,6 @@
 
         public function SearchEmail($email){
             $this->RetrieveData();
-            $studentExist = null;
 
             $users = array_filter($this->studentList, function($studentExist) use($email){
                 return $studentExist->getEmail() == $email;
