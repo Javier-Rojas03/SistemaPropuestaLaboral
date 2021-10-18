@@ -4,27 +4,6 @@
         "description": "A",
         "contact_email": "a@gmail.com",
         "phone_number": "1",
-        "company_id": 1
-    },
-    {
-        "company_name": "A",
-        "description": "A",
-        "contact_email": "a@gmail.com",
-        "phone_number": "1",
-        "company_id": 2
-    },
-    {
-        "company_name": "A",
-        "description": "A",
-        "contact_email": "a@gmail.com",
-        "phone_number": "1",
-        "company_id": 3
-    },
-    {
-        "company_name": "A",
-        "description": "A",
-        "contact_email": "a@gmail.com",
-        "phone_number": "1",
         "company_id": 4
     }
 ]

@@ -38,6 +38,21 @@
             $this->ShowListView();
         }
 
+        public function Edit($id){
+            ///terminar
+        }
+
+        public function Action($action){
+            $array = explode(",",$action);
+            $id = $array[0];
+
+            if(strcmp("Remove", $array[1]) == 0){
+                $this->Remove($id);
+            }else{
+                $this->Edit($id);
+            }
+        }
+
         public function CompanyInfo($id){
             $company = $this->CompanyDAO->GetById($id);
             require_once(VIEWS_PATH."company-info.php");
