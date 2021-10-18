@@ -58,7 +58,7 @@
             $arrayToEncode = array();
     
             foreach($this->CompanyList as $Company){
-
+                
                 $valuesArray["company_name"] = $Company->getCompanyName();
                 $valuesArray["description"] = $Company->getDescription();
                 $valuesArray["contact_email"] = $Company->getContactEmail();

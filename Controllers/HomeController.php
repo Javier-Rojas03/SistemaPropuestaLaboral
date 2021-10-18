@@ -14,5 +14,9 @@
         public function Menu(){
             require_once(VIEWS_PATH."home.php");
         }
+
+        public function MenuAdmin(){
+            require_once(VIEWS_PATH."homeAdmin.php");
+        }
     }
 ?>

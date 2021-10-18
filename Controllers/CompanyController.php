@@ -20,17 +20,17 @@
             require_once(VIEWS_PATH."company-list.php");
         }
 
-        public function Add($name, $description, $email, $phone){
+        public function Add($company_name, $description, $contact_email, $phone_number){
 
             $Company = new Company();
-            $Company->setCompanyName($name);
+            $Company->setCompanyName($company_name);
             $Company->setDescription($description);
-            $Company->setContactEmail($email);
-            $Company->setPhoneNumber($phone);
+            $Company->setContactEmail($contact_email);
+            $Company->setPhoneNumber($phone_number);
 
             $this->CompanyDAO->Add_Company($Company);
 
-            $this->ShowAddView();
+            $this->ShowListView();
         }
 
         public function Remove($id){

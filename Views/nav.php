@@ -17,8 +17,12 @@
                               <a class="nav-link" href="<?php echo FRONT_ROOT ?>Company/ShowListView">Company List</a>
                          </li>
                          <li class="nav-item">
+                              <a class="nav-link" href="<?php echo FRONT_ROOT ?>Home/MenuAdmin">Menu</a>
+                         </li>
+                         <li class="nav-item">
                               <a class="nav-link" href="<?php echo FRONT_ROOT ?>Home/Logout">Logout</a>
                          </li>
+
                     <?php
                }else{
                     ?>
