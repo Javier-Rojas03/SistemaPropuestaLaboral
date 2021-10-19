@@ -6,7 +6,7 @@
 ?>
 <main class="py-5">
     <section id="listado" class="mb-5">
-          <div class="container">
+          <div class="container" align="center">
                <h2 class="mb-4">User info:</h2>
                <table class="table bg-light-alpha">
                     <thead>
@@ -51,6 +51,8 @@
                         ?>
                     </tbody>
                </table>
+               <img src = "../Views/Styles/img/Fachada.jpg" style="border: 2px solid #000; margin-top:30px;border-radius: 5px;">
+               <p style="padding-top:10px;"> <b>You are in the lobby of the website, use the references on the upper right corner to navigate through the system.</b> </p>
           </div>
     </section>
 </main>

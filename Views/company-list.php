@@ -4,6 +4,10 @@
 <main class="py-5">
      <section id="listado" class="mb-5">
           <div class="container">
+               <form action="">
+                    <input maxlength="20" type="text" name="search">
+                    <button type="submit" class="btn" style="background-color: #48c; color: #fff" >Search🔎</button>
+               </form>
                <h2 class="mb-4">Companies</h2>
                <table class="table bg-light-alpha">
                     <form action="<?php echo FRONT_ROOT."Company/Action"?>" method="post" class="bg-light-alpha p-5">   
@@ -28,8 +32,7 @@
                                              <td><?php echo $company->getDescription(); ?></td>
                                              <td><?php echo $company->getContactEmail(); ?></td>
                                              <td><?php echo $company->getPhoneNumber(); ?></td>
-                                             <td> 
-                                             <!--SESION DE COMPANY PARA PASARLE LA COMPANIA A MODIFICAR O A DELETEAR-->
+                                             <td>
                                              <button type="submit" class="btn" name="action" value="<?php echo $company->getCompanyId(); ?>,Remove" style="background-color: #48c; color: #fff" >Delete</button>
                                              <button type="submit" class="btn" name="action" value="<?php echo $company->getCompanyId(); ?>,Edit" style="background-color: #48c; color: #fff" >Edit</button> 
                                              </td>                                                                                                                                                                 
