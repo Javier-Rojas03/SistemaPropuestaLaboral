@@ -32,6 +32,19 @@
             return $id + 1;
         }
         
+        public function Filter($name){
+            $this->RetrieveData();
+            $filteredList = array();
+
+            foreach($this->CompanyList as $company){
+
+                if(strcasecmp($company->getCompanyname(),$name)==0){
+                    array_push($filteredList,$company);
+                }
+            }
+            return $filteredList;
+        }
+
         public function GetById($id){
             $this->RetrieveData();
 

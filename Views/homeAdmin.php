@@ -9,6 +9,7 @@
           <div class="container">
               <div align="center">
                     <div style="display:inline;">
+                        <img src="../Views/Styles/img/admin.png">
                         <h2 class="mb-4" >Welcome <?php echo "$admin!" ?></h2>
                     </div>
                     <img src = "../Views/Styles/img/Fachada.jpg" style="border: 2px solid #000; margin-top:30px;border-radius: 5px;">

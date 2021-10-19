@@ -19,6 +19,12 @@
             require_once(VIEWS_PATH."std-company-list.php");
         }
 
+        public function Filter($search){
+            $company_list = $this->companyDAO->Filter($search);
+            require_once(VIEWS_PATH."std-company-list.php");
+        }
+
+
         public function ShowMenu($email){
             $this->studentDAO->SaveAPI();
             if($email == "admin@sessionstart.com"){
