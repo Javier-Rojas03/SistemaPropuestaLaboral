@@ -3,6 +3,7 @@
 ?>
 <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
      <span class="navbar-text">
+          <img src = "../Views/Styles/img/utn.png" style="height: 30px;">
           <strong>Universidad Tecnologica Nacional</strong>
          
      </span>

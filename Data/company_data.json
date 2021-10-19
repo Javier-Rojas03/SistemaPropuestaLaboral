@@ -1,9 +1,44 @@
 [
     {
-        "company_name": "A",
-        "description": "A",
-        "contact_email": "a@gmail.com",
-        "phone_number": "1",
+        "company_name": "EvilCorp",
+        "description": "They are evil",
+        "contact_email": "devil@hellskitchen.com",
+        "phone_number": "698523147",
+        "company_id": 3
+    },
+    {
+        "company_name": "EvilCorp",
+        "description": "They are evil",
+        "contact_email": "evil@hellskitchen.com",
+        "phone_number": "456789321",
+        "company_id": 6
+    },
+    {
+        "company_name": "Noga",
+        "description": "venta de perifericos",
+        "contact_email": "noga@noga.com",
+        "phone_number": "1234444567",
+        "company_id": 1
+    },
+    {
+        "company_name": "Pure Company",
+        "description": "They are pure",
+        "contact_email": "lionel@andresmessi10.com",
+        "phone_number": "412365987",
         "company_id": 4
+    },
+    {
+        "company_name": "Samsung",
+        "description": "empresa de dispositivos electronicos",
+        "contact_email": "samsung@samsung.com",
+        "phone_number": "3214213124",
+        "company_id": 2
+    },
+    {
+        "company_name": "xasd",
+        "description": "dsa",
+        "contact_email": "x@x.com",
+        "phone_number": "123456",
+        "company_id": 7
     }
 ]

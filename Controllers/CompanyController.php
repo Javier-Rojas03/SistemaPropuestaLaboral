@@ -39,7 +39,22 @@
         }
 
         public function Edit($id){
-            ///terminar
+            require_once(VIEWS_PATH."validate-session.php");
+            $company = $this->CompanyDAO->GetById($id);
+            $_SESSION['company'] = $company;
+            require_once(VIEWS_PATH."company-edit.php");
+        }
+
+        public function EditAux($company_name, $description, $contact_email, $phone_number){
+            $company = new Company;
+            $company->setCompanyId($_SESSION['company']->getCompanyId());
+            $company->setCompanyName($company_name);
+            $company->setDescription($description);
+            $company->setContactEmail($contact_email);
+            $company->setPhoneNumber($phone_number);
+
+            $this->CompanyDAO->Edit($company);
+            $this->ShowListView();
         }
 
         public function Action($action){

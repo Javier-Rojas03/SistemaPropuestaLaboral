@@ -10,6 +10,6 @@
      <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH ?>estilos.css">
 
      <title>UTN</title>
-     <!-- meter icono -->
+     <link rel="icon" href="../Views/Styles/img/utn.png">
 </head>
 <body>

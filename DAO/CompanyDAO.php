@@ -44,6 +44,11 @@
             return (count($Company_array) > 0) ? $Company_array[0] : null;
         }
 
+        public function Edit($company){
+            $this->Remove($company->getCompanyId());
+            $this->Add_Company($company);
+        }
+
         public function Remove($id){
             $this->RetrieveData();
 
@@ -93,6 +98,7 @@
         
                     array_push($this->CompanyList, $Company);
                 }
+                asort($this->CompanyList);
             }
         }
 
